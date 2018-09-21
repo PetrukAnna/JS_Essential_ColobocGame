@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Colobok </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<img class="house_img" src="Images/house.png">
+		<img class="grandmother_img" src="Images/grandmother.png">
+		<img class="grandfather_img" src="Images/grandfather.png">
+		<img id="colobok" class="colobok_img" src="Images/colobok.png">
+		<img class="rabbit_img" src="Images/rabbit.png">
+		<img class="fox_img" src="Images/fox.png">
+		<img class="wolf_img" src="Images/wolf.png">
+		<img class="bear_img" src="Images/bear.png">
+
+		<input id="rabbit_level_action" class="rabbit_level_button" type="button" value="1">
+		<input id="fox_level_action" class="fox_level_button" type="button" value="2">
+		<input id="wolf_level_action" class="wolf_level_button" type="button" value="3">
+		<input id="bear_level_action" class="bear_level_button" type="button" value="4">
+
+		<div class="lives">
+			<img src="Images/lives.png">
+			<span id="lives"> </span>
+		</div>
+
+		<div class="coins">
+			<img src="Images/coins.png">
+			<span id="coins"> </span>
+		</div>
+
+		<div id="rabbit_level_action_pannel" class="rabbit_level_pannel">
+			<h3> Рівень 1 </h3>
+			<div class="coins_level_1">
+				<img src="Images/coins.png">
+				<span id="coins_level_1"> 100 </span>
+			</div>
+
+			<div class="pannel">
+				<div id="block_rabbit_1" class="block_rabbit"></div>
+				<div id="block_rabbit_2" class="block_rabbit"></div>
+				<div id="block_rabbit_3" class="block_rabbit"></div>
+				<div id="block_rabbit_4" class="block_rabbit"></div>
+			</div>
+			<img src="Images/rabbit.png">
+		</div>
+
+		<div id="fox_level_action_pannel" class="fox_level_pannel">
+			<h3> Рівень 2 </h3>
+			<div class="coins_level_2">
+				<img src="Images/coins.png">
+				<span id="coins_level_2"> 200 </span>
+			</div>
+
+			<div class="pannel">
+				<div id="block_fox_1" class="block_fox"></div>
+				<div id="block_fox_2" class="block_fox"></div>
+				<div id="block_fox_3" class="block_fox"></div>
+				<div id="block_fox_4" class="block_fox"></div>
+				<div id="block_fox_5" class="block_fox"></div>
+				<div id="block_fox_6" class="block_fox"></div>
+			</div>
+			<img src="Images/fox.png">
+		</div>
+
+		<div id="wolf_level_action_pannel" class="wolf_level_pannel">
+			<h3> Рівень 3 </h3>
+			<div class="coins_level_3">
+				<img src="Images/coins.png">
+				<span id="coins_level_3"> 300 </span>
+			</div>
+
+			<div class="pannel">
+				<div id="block_wolf_1" class="block_wolf"></div>
+				<div id="block_wolf_2" class="block_wolf"></div>
+				<div id="block_wolf_3" class="block_wolf"></div>
+				<div id="block_wolf_4" class="block_wolf_special"></div>
+				<div id="block_wolf_5" class="block_wolf"></div>
+				<div id="block_wolf_6" class="block_wolf"></div>
+				<div id="block_wolf_7" class="block_wolf"></div>
+				<div id="block_wolf_8" class="block_wolf"></div>
+			</div>
+			<img src="Images/wolf.png">
+		</div>
+
+		<div id="bear_level_action_pannel" class="bear_level_pannel">
+			<h3> Рівень 4 </h3>
+			<div class="coins_level_4">
+				<img src="Images/coins.png">
+				<span id="coins_level_4"> 400 </span>
+			</div>
+
+			<div class="pannel">
+				<div id="block_bear_1" class="block_bear"></div>
+				<div id="block_bear_2" class="block_bear"></div>
+				<div id="block_bear_3" class="block_bear"></div>
+				<div id="block_bear_4" class="block_bear"></div>
+				<div id="block_bear_5" class="block_bear"></div>
+				<div id="block_bear_6" class="block_bear"></div>
+				<div id="block_bear_7" class="block_bear"></div>
+				<div id="block_bear_8" class="block_bear"></div>
+				<div id="block_bear_9" class="block_bear"></div>
+				<div id="block_bear_10" class="block_bear"></div>
+				<div id="block_bear_11" class="block_bear"></div>
+				<div id="block_bear_12" class="block_bear"></div>
+			</div>
+			<img src="Images/bear.png">
+		</div>
+
+		<!-- Handle alert and confirm -->
+
+		<div id="alert_container" class="alert_container">
+			<div class="alert">
+				<h3> Колобок </h3>
+				<div id="alert_text" class="alert_text"> </div>
+				<div id="alert_control" class="alert_control"> Ok </div>
+			</div>
+		</div>
+
+		<div id="confirm_container" class="confirm_container">
+			<div class="alert">
+				<h3> Колобок </h3>
+				<div id="confirm_text" class="confirm_text"> </div>
+				<div id="confirm_yes" class="confirm_yes"> Ok </div>
+				<div id="confirm_cancel" class="confirm_cancel"> Cancel </div>
+			</div>
+		</div>
+	</body>
+</html>
